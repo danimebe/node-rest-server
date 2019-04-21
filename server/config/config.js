@@ -16,5 +16,5 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 //          BASE DE DATOS
 //=====================================
 
-process.env.URLDB = process.env.NODE_ENV === 'dev' ? 'mongodb://localhost:27017/cafe' : 'mongodb+srv://danimb:Tkllz0ltkApyvERV@cluster0-kvzic.mongodb.net/cafe';
+process.env.URLDB = process.env.NODE_ENV === 'dev' ? 'mongodb://localhost:27017/cafe' : process.env.MONGO_URI;
 
