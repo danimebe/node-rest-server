@@ -29,3 +29,8 @@ process.env.SEED = process.env.NODE_ENV === 'dev' ? 'development-seed' : process
 
 process.env.URLDB = process.env.NODE_ENV === 'dev' ? 'mongodb://localhost:27017/cafe' : process.env.MONGO_URI;
 
+//=====================================
+//          PUBLIC GOOGLE KEY
+//=====================================
+
+process.env.CLIENT_ID = process.env.CLIENT_ID || '641365011901-csi04rpdpmpe4947s659sd4eq5tecpkc.apps.googleusercontent.com';
